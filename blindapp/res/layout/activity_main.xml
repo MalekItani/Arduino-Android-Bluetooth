@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.blindapp.MainActivity"
+    android:padding="16dp"
+    android:background="#262626">
+
+    <TextView
+        android:id="@+id/button"
+        android:onClick="but"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:background="@drawable/circle"
+        android:text="Set Height!"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-medium"/>
+    <ImageView
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bluetooth_2_50"
+        android:layout_alignParentRight="true"
+        android:onClick="Bt"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/layout">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upper Limit:"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height:"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lower Limit:"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layout"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/hmax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90 cm"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            />
+        <TextView
+            android:id="@+id/h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="85 cm"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            />
+        <TextView
+            android:id="@+id/hmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80 cm"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            />
+
+
+    </LinearLayout>
+    <ImageView
+        android:onClick="dc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/oie_transparent"
+    />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
