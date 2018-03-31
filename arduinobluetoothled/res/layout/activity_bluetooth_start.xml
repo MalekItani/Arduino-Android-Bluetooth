@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp"
+    tools:context="com.example.android.arduinobluetoothled.BluetoothStart">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/bluetoothConfig"
+            android:onClick="openBluetoothIntent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configure Bluetooth"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-regular"
+            android:background="#6563ff"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/redOn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="#f95757"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-regular"
+            android:gravity="center"
+            android:text="Red ON"
+            android:onClick="redOn"/>
+        <TextView
+            android:id="@+id/yellowOn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-regular"
+            android:textSize="18dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="#fff768"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Yellow ON"
+            android:onClick="yellowOn"/>
+        <TextView
+            android:id="@+id/greenOn"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-regular"
+            android:layout_height="48dp"
+            android:textSize="18dp"
+            android:background="#69f461"
+            android:text="Green ON"
+            android:onClick="greenOn"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/redOff"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="#ffc4c4"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-regular"
+            android:gravity="center"
+            android:text="Red OFF"
+            android:onClick="redOff"/>
+        <TextView
+            android:id="@+id/yellowOff"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-regular"
+            android:textSize="18dp"
+            android:layout_height="48dp"
+            android:background="#fffdc4"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Yellow OFF"
+            android:onClick="yellowOff"/>
+        <TextView
+            android:onClick="greenOff"
+            android:id="@+id/greenOff"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-regular"
+            android:layout_height="48dp"
+            android:textSize="18dp"
+            android:background="#c7ffc4"
+            android:text="Green OFF"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:onClick="allOn"
+            android:id="@+id/allOn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Turn all ON"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-regular"
+            android:layout_marginRight="8dp"
+            android:background="#c61f6d"
+            />
+        <TextView
+            android:onClick="allOff"
+            android:id="@+id/allOff"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-regular"
+            android:background="#c9a3e0"
+            android:layout_marginLeft="8dp"
+            android:text="Turn all OFF"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:id="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
